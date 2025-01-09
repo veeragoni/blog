@@ -1,0 +1,64 @@
+[
+  {
+    "slug": "getting-started-with-ai",
+    "title": "Getting Started with Generative AI: A Developer's Guide",
+    "date": "2024-03-21",
+    "description": "Learn how to effectively use generative AI tools to enhance your development workflow",
+    "author": "Sudhir Maddulapally",
+    "tags": ["AI", "Development", "Productivity"],
+    "image": "https://picsum.photos/seed/ai-dev/800/600",
+    "pinned": true,
+    "content": "# Getting Started with Generative AI: A Developer's Guide\n\nLearn how to leverage generative AI tools to enhance your development workflow and boost productivity..."
+  },
+  {
+    "slug": "web3-future",
+    "title": "The Future of Web3 and Decentralized Systems",
+    "date": "2024-03-25",
+    "description": "Exploring the potential impact of Web3 technologies on the future of the internet",
+    "author": "Suresh Veeragoni, Sudhir Maddulapally",
+    "tags": ["Web3", "Blockchain", "Innovation"],
+    "image": "https://picsum.photos/seed/web3/800/600",
+    "pinned": true,
+    "content": "# The Future of Web3 and Decentralized Systems\n\nWeb3 represents the next evolution of the internet..."
+  },
+  {
+    "slug": "sustainable-tech",
+    "title": "Sustainable Technology: Building a Greener Digital Future",
+    "date": "2024-03-26",
+    "description": "How technology can help address environmental challenges and promote sustainability",
+    "author": "Suresh Veeragoni",
+    "tags": ["Sustainability", "Innovation", "Technology"],
+    "image": "https://picsum.photos/seed/green-tech/800/600",
+    "content": "# Sustainable Technology: Building a Greener Digital Future\n\nAs we face increasing environmental challenges..."
+  },
+  {
+    "slug": "ai-breakthroughs",
+    "title": "Recent Breakthroughs in AI Technology",
+    "date": "2024-03-24",
+    "description": "Examining the latest advancements in AI research and their implications",
+    "author": "Suresh Veeragoni, Sudhir Maddulapally",
+    "tags": ["AI", "Research", "Innovation"],
+    "image": "https://picsum.photos/seed/ai-tech/800/600",
+    "content": "# Recent Breakthroughs in AI Technology\n\nThe field of artificial intelligence continues to evolve rapidly..."
+  },
+  {
+    "slug": "ai-industry-transformation",
+    "title": "How AI is Transforming Major Industries",
+    "date": "2024-03-23",
+    "description": "Exploring the revolutionary impact of AI across different sectors",
+    "author": "Suresh Veeragoni",
+    "tags": ["AI", "Industry", "Innovation"],
+    "image": "https://picsum.photos/seed/ai-industry/800/600",
+    "content": "# How AI is Transforming Major Industries\n\nArtificial Intelligence is revolutionizing traditional industries..."
+  },
+  {
+    "slug": "ai-workforce-impact",
+    "title": "The Impact of AI on the Future Workforce",
+    "date": "2024-03-22",
+    "description": "An in-depth analysis of how AI is reshaping employment, skills, and career paths",
+    "author": "Ram Mittala",
+    "tags": ["AI", "Future of Work", "Careers"],
+    "image": "https://picsum.photos/seed/ai-workforce/800/600",
+    "content": "# The Impact of AI on the Future Workforce\n\nAs AI technology advances, it's reshaping the employment landscape..."
+  }
+]

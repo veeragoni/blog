@@ -1,0 +1,92 @@
+(node:28087) ExperimentalWarning: CommonJS module /opt/homebrew/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /opt/homebrew/lib/node_modules/npm/node_modules/supports-color/index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Starting up http-server, serving out
+
+http-server version: 14.1.1
+
+http-server settings: 
+CORS: disabled
+Cache: 3600 seconds
+Connection Timeout: 120 seconds
+Directory Listings: visible
+AutoIndex: visible
+Serve GZIP Files: false
+Serve Brotli Files: false
+Default File Extension: none
+
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.6.6:8080
+  http://11.112.56.135:8080
+Hit CTRL-C to stop the server
+
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+(node:28112) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/css/8362de5e4f88ccd6.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/webpack-1b400f1de436fe28.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/fd9d1056-5c33ad111f53b1be.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/117-b226419c03bec03b.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/main-app-cbc994c6e343527e.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/869-3dac47337e5fdefe.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/209-4b391caf54b830b9.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/236-4d65723955352dc2.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/310-8bc5701b60cf359e.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/app/page-8249a40e8c705652.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/app/layout-1fbd05f560be6a75.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /posts.txt?_rsc=1wtp7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /tags.txt?_rsc=1wtp7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /posts/web3-future.txt?_rsc=1wtp7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /posts/getting-started-with-ai.txt?_rsc=1wtp7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /posts/sustainable-tech.txt?_rsc=1wtp7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/app/posts/page-0db1d129663b5bad.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /posts/ai-breakthroughs.txt?_rsc=1wtp7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/app/tags/page-6f9c57294004067e.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:07 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/app/posts/%5Bslug%5D/page-842467a679aca615.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:08 GMT-0800 (Pacific Standard Time)]  "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:10 GMT-0800 (Pacific Standard Time)]  "GET /posts/ai-industry-transformation.txt?_rsc=1wtp7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:10 GMT-0800 (Pacific Standard Time)]  "GET /posts/ai-workforce-impact.txt?_rsc=1wtp7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:15 GMT-0800 (Pacific Standard Time)]  "GET /authors/Suresh%20Veeragoni.txt?_rsc=bwq6a" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:15 GMT-0800 (Pacific Standard Time)]  "GET /authors/Sudhir%20Maddulapally.txt?_rsc=bwq6a" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:21:17 GMT-0800 (Pacific Standard Time)]  "GET /authors/Suresh%20Veeragoni" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:23:37 GMT-0800 (Pacific Standard Time)]  "GET /authors/Suresh%20Veeragoni" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:23:54 GMT-0800 (Pacific Standard Time)]  "GET /authors/Suresh%20Veeragoni" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:32:45 GMT-0800 (Pacific Standard Time)]  "GET /authors" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:32:45 GMT-0800 (Pacific Standard Time)]  "GET /authors/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:32:54 GMT-0800 (Pacific Standard Time)]  "GET /authors" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:32:57 GMT-0800 (Pacific Standard Time)]  "GET /authors" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:01 GMT-0800 (Pacific Standard Time)]  "GET /tags/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:06 GMT-0800 (Pacific Standard Time)]  "GET /tags/web3.txt?_rsc=j17r0" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:06 GMT-0800 (Pacific Standard Time)]  "GET /_next/static/chunks/app/tags/%5Btag%5D/page-47b7beebd7b995e1.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/ai.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/research.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/innovation.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/industry.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/future%20of%20work.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/careers.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/development.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/productivity.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/sustainability.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/technology.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:12 GMT-0800 (Pacific Standard Time)]  "GET /tags/blockchain.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:15 GMT-0800 (Pacific Standard Time)]  "GET /tags/web3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:15 GMT-0800 (Pacific Standard Time)]  "GET /tags/web3/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:20 GMT-0800 (Pacific Standard Time)]  "GET /tags" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:24 GMT-0800 (Pacific Standard Time)]  "GET /tags/web3.txt?_rsc=4zorr" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:28 GMT-0800 (Pacific Standard Time)]  "GET /tags" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:28 GMT-0800 (Pacific Standard Time)]  "GET /tags/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:31 GMT-0800 (Pacific Standard Time)]  "GET /tags" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:49 GMT-0800 (Pacific Standard Time)]  "GET /authors/Sudhir%20Maddulapally.txt?_rsc=odd9f" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:53 GMT-0800 (Pacific Standard Time)]  "GET /authors/Sudhir%20Maddulapally" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:33:56 GMT-0800 (Pacific Standard Time)]  "GET /authors/Sudhir%20Maddulapally/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:34:14 GMT-0800 (Pacific Standard Time)]  "GET /posts" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:34:14 GMT-0800 (Pacific Standard Time)]  "GET /posts/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:34:16 GMT-0800 (Pacific Standard Time)]  "GET /posts" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:34:21 GMT-0800 (Pacific Standard Time)]  "GET /posts/ai-industry-transformation.txt?_rsc=bbz56" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:34:21 GMT-0800 (Pacific Standard Time)]  "GET /posts/ai-workforce-impact.txt?_rsc=bbz56" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 09:54:22 GMT-0800 (Pacific Standard Time)]  "GET /posts/sustainable-tech.txt?_rsc=bbz56" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 10:00:35 GMT-0800 (Pacific Standard Time)]  "GET /posts" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 10:00:35 GMT-0800 (Pacific Standard Time)]  "GET /posts/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+[Wed Jan 08 2025 10:00:36 GMT-0800 (Pacific Standard Time)]  "GET /posts/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
