@@ -11,7 +11,7 @@ export function SiteFooter() {
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             Built by {siteConfig.author}. The source code is available on{" "}
             <a
-              href={siteConfig.social.github}
+              href= "https://github.com/veeragoni/blog/"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
