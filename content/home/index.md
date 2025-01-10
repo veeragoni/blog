@@ -4,4 +4,4 @@ description: "Insights on AI, innovation, and the future of work. Join me on a j
 featuredTitle: "Featured Posts"
 latestTitle: "Latest Posts"
 ---
-Welcome to a space where we explore the cutting edge of technology and its impact on business and society. Here you'll find in-depth analysis, practical guides, and thought-provoking discussions on AI, Business and Innovation. Note: Current Content is AI generated. Original posts coming soon!
+Welcome to a space where we explore the cutting edge of technology and its impact on business and society. Here you'll find in-depth analysis, practical guides, and thought-provoking discussions on AI, Business and Innovation. Note: Current Content is AI generated for testing the blog publishing process. Original, AI augmented posts are coming soon!
