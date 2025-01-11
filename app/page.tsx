@@ -51,12 +51,12 @@ export default function Home() {
       <SiteHeader />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-card py-20">
+        <section className="bg-card py-15">
           <div className="container">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60 py-2">
               Exploring Technology, Business, and Beyond
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl">
+            <p className="text-xl text-muted-foreground mb-8 whitespace-nowrap overflow-hidden text-ellipsis text-justify max-w-full">
               Insights on AI, innovation, and the future of work. Join me on a
               journey through the intersection of technology and business.
             </p>
@@ -64,7 +64,7 @@ export default function Home() {
         </section>
 
         {/* Posts */}
-        <section className="container py-12">
+        <section className="container py-8">
           <PinnedPosts title="Featured Posts" posts={pinnedPosts} />
 
           <h2 className="text-3xl font-bold mb-8">Latest Posts</h2>
