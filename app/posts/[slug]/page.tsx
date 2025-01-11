@@ -25,12 +25,12 @@ export default async function PostPage({ params }: { params: { slug: string } })
           <Breadcrumb items={[{ label: "Posts", href: "/posts" }, { label: post.title, href: `/posts/${params.slug}` }]} />
         </div>
         
-        <div className="relative w-full h-[400px] mb-8">
+        <div className="relative w-full h-[100px] mb-8">
           <Image
             src={post.image}
             alt={post.title}
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
