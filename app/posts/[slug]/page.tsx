@@ -7,6 +7,8 @@ import { AuthorLink } from "@/components/author-link";
 import { Users, User } from "lucide-react";
 import Image from "next/image";
 import { format } from 'date-fns';
+import { ScrollProgress } from "./scroll-progress";
+
 
 export async function generateStaticParams() {
   return getAllPostSlugs();
@@ -20,6 +22,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
   return (
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
+      <ScrollProgress />
       <main className="flex-1">
         <div className="container py-6">
           <Breadcrumb items={[{ label: "Posts", href: "/posts" }, { label: post.title, href: `/posts/${params.slug}` }]} />
