@@ -16,6 +16,10 @@ export interface Post {
 
 let postsCache: Post[] | null = null;
 
+function getBasePath() {
+  return process.env.NEXT_PUBLIC_BASE_PATH || '';
+}
+
 export async function getLatestPosts(limit?: number): Promise<Post[]> {
   // Return cached posts if available
   if (postsCache) {
@@ -26,7 +30,7 @@ export async function getLatestPosts(limit?: number): Promise<Post[]> {
   }
 
   try {
-    const response = await fetch('/posts.json');
+    const response = await fetch(`${getBasePath()}/posts.json`);
     if (!response.ok) {
       throw new Error('Failed to fetch posts');
     }
