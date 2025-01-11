@@ -38,7 +38,20 @@ export function SearchDialog() {
 
   React.useEffect(() => {
     if (!open) return;
-    getLatestPosts().then(setPosts);
+
+    async function loadPosts() {
+      setIsLoading(true);
+      try {
+        const allPosts = await getLatestPosts();
+        setPosts(allPosts);
+      } catch (error) {
+        console.error("Failed to load posts:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    loadPosts();
   }, [open]);
 
   React.useEffect(() => {

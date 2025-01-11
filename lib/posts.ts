@@ -14,11 +14,34 @@ export interface Post {
   pinned?: boolean;
 }
 
-export async function getLatestPosts(limit?: number) {
-  const sortedPosts = [...posts].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
-  return limit ? sortedPosts.slice(0, limit) : sortedPosts;
+let postsCache: Post[] | null = null;
+
+export async function getLatestPosts(limit?: number): Promise<Post[]> {
+  // Return cached posts if available
+  if (postsCache) {
+    const sortedPosts = [...postsCache].sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+    return limit ? sortedPosts.slice(0, limit) : sortedPosts;
+  }
+
+  try {
+    const response = await fetch('/posts.json');
+    if (!response.ok) {
+      throw new Error('Failed to fetch posts');
+    }
+    
+    const posts = await response.json();
+    postsCache = posts; // Cache the posts
+
+    const sortedPosts = [...posts].sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+    return limit ? sortedPosts.slice(0, limit) : sortedPosts;
+  } catch (error) {
+    console.error('Error loading posts:', error);
+    return [];
+  }
 }
 
 export async function getPinnedPosts() {
