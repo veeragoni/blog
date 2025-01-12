@@ -4,7 +4,7 @@ This repository is a blog project where authors can contribute blog posts by edi
 
 ## Example Blog
 
-This project deploys the blog to https://veeragoni.github.io/, which is setup to to serve from https://blog.tldrversion.com/ in GitHub Page Settings. I setup a CNAME in my DNS provider to point to veeragoni.github.io so that GitHub route the request to it. GitHub Pages [uses Let's Encrypt](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https) to provide SSL certificates, so this is completely free 
+This project deploys the blog to https://veeragoni.github.io/blog, which is setup to to serve from https://blog.tldrversion.com/ in GitHub Page Settings. I setup a CNAME in my DNS provider to point to veeragoni.github.io so that GitHub route the request to it. GitHub Pages [uses Let's Encrypt](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https) to provide SSL certificates, so this is completely free 
 Below is an example CNAME setting.
 
 ```
