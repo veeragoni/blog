@@ -7,8 +7,10 @@ import { SiteFooter } from "@/components/site-footer";
 import { siteConfig } from "@/config/site";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import CookieConsentBanner from '@/components/cookie-conset'
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin"] });
+const GA_MEASUREMENT_ID = 'G-9YHS24HY6J';
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -54,13 +56,33 @@ export default function RootLayout({
           title={`${siteConfig.name} Atom Feed`}
           href="/atom.xml"
         />
+         <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              // Set default consent to denied
+              gtag('consent', 'default', {
+                'analytics_storage': 'denied',
+                'ad_storage': 'denied'
+              });
+
+              gtag('config', '${GA_MEASUREMENT_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="relative min-h-screen flex flex-col">
             {children}
             <CookieConsentBanner />
-            <GoogleAnalytics gaId="G-9YHS24HY6J" />
             <SiteFooter />
           </div>
           <Toaster />

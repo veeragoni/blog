@@ -1,19 +1,42 @@
 // components/CookieConsent.tsx
 'use client';
 import CookieConsent from "react-cookie-consent";
-import { setCookie } from 'cookies-next';
+import { setCookie, hasCookie } from 'cookies-next';
+import { useEffect } from 'react';
+
+// Function to initialize GA based on consent
+const initializeGA = () => {
+  // Initialize GA4 with Consent Mode
+  window.gtag('consent', 'update', {
+    'analytics_storage': 'granted',
+    'ad_storage': 'denied'
+  });
+};
 
 export default function CustomCookieConsent() {
+  useEffect(() => {
+    // Check if consent was previously given
+    if (hasCookie('analytics_cookies')) {
+      initializeGA();
+    }
+  }, []);
+
   const handleAcceptAll = () => {
     setCookie("functional_cookies", "true");
     setCookie("analytics_cookies", "true");
     setCookie("personal_cookies", "true");
+    initializeGA();
   };
 
   const handleEssentialOnly = () => {
     setCookie("functional_cookies", "true");
-    setCookie("analytics_cookies", "true");
+    setCookie("analytics_cookies", "false");
     setCookie("personal_cookies", "false");
+    // Deny analytics tracking
+    window.gtag('consent', 'update', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied'
+    });
   };
 
   return (
