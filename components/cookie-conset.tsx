@@ -1,34 +1,36 @@
 // components/CookieConsent.tsx
-"use client"; // Mark as a Client Component in Next.js 14
-
+"use client";
 import React, { useEffect, useState } from "react";
 import CookieConsent from "react-cookie-consent";
+import Script from "next/script";
 
-const GA_MEASUREMENT_ID = "G-9YHS24HY6J"; // Replace with your GA ID
+const GA_MEASUREMENT_ID = "G-9YHS24HY6J";
 
 const CookieConsentComponent: React.FC = () => {
   const [consentGiven, setConsentGiven] = useState<boolean>(false);
 
+  // Initialize GA with consent defaults
   useEffect(() => {
-    if (consentGiven) {
-      // Load the Google Analytics script
-      const script = document.createElement("script");
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-      script.async = true;
-      document.head.appendChild(script);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(...args: any[]) {
+      window.dataLayer.push(args);
+    }
+    window.gtag = gtag;
+    
+    // Set default consent to 'denied' before initialization
+    gtag("consent", "default", {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+    });
+    
+    gtag("js", new Date());
+    gtag("config", GA_MEASUREMENT_ID);
+  }, []);
 
-      // Initialize gtag
-      window.dataLayer = window.dataLayer || [];
-      function gtag(...args: any[]) {
-        window.dataLayer.push(args);
-      }
-      window.gtag = gtag;
-
-      gtag("js", new Date());
-      gtag("config", GA_MEASUREMENT_ID);
-
-      // Update consent
-      gtag("consent", "update", {
+  // Update consent when user accepts
+  useEffect(() => {
+    if (consentGiven && window.gtag) {
+      window.gtag("consent", "update", {
         analytics_storage: "granted",
       });
     }
@@ -36,21 +38,20 @@ const CookieConsentComponent: React.FC = () => {
 
   return (
     <>
+      {/* Load GA script after interactive */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
       <CookieConsent
         location="bottom"
         buttonText="Accept"
         declineButtonText="Decline"
         cookieName="cookieConsent"
-        style={{ background: "#2B373B" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-        expires={365}
-        onAccept={() => {
-          setConsentGiven(true);
-        }}
+        onAccept={() => setConsentGiven(true)}
         enableDeclineButton
-        onDecline={() => {
-          console.log("Cookies declined");
-        }}
+        expires={365}
+        // Add style props as needed
       >
         This website uses cookies to enhance the user experience.
       </CookieConsent>
