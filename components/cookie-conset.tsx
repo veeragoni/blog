@@ -1,65 +1,72 @@
-// components/CookieConsent.tsx
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import CookieConsent from "react-cookie-consent";
 import Script from "next/script";
 
 const GA_MEASUREMENT_ID = "G-9YHS24HY6J";
 
-const CookieConsentComponent: React.FC = () => {
-  const [consentGiven, setConsentGiven] = useState<boolean>(false);
+declare global {
+  interface Window {
+    dataLayer: any[];
+    gtag: (...args: any[]) => void;
+  }
+}
 
-  // Initialize GA with consent defaults
+const CookieConsentComponent = () => {
   useEffect(() => {
+    // Initialize dataLayer and gtag first
     window.dataLayer = window.dataLayer || [];
-    function gtag(...args: any[]) {
-      window.dataLayer.push(args);
-    }
-    window.gtag = gtag;
+    window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
     
-    // Set default consent to 'denied' before initialization
-    gtag("consent", "default", {
+    // Set default consent before any config
+    window.gtag("consent", "default", {
       analytics_storage: "denied",
-      ad_storage: "denied",
+      ad_storage: "denied"
     });
-    
-    gtag("js", new Date());
-    gtag("config", GA_MEASUREMENT_ID);
-  }, []);
 
-  // Update consent when user accepts
-  useEffect(() => {
-    if (consentGiven && window.gtag) {
-      // Force cookie creation
-      window.gtag("event", "consent_update", {
-        analytics_storage: "granted",
-        ad_storage: "granted",
-        region: ["US"] // GDPR compliance
-      });
-  
-      // First-party cookie fallback
-      if (!document.cookie.includes("_ga")) {
-        document.cookie = `_ga=GA1.1.${Date.now()}.${Math.random()}; Path=/; SameSite=Lax; Max-Age=63072000`;
-      }
-    }
-  }, [consentGiven]);
+    // Initial config with page_view disabled
+    window.gtag("js", new Date());
+    window.gtag("config", GA_MEASUREMENT_ID, {
+      send_page_view: false,
+      cookie_flags: "SameSite=None; Secure"
+    });
+  }, []);
 
   return (
     <>
-      {/* Load GA script after interactive */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
         strategy="afterInteractive"
+        id="ga-script"
+        onLoad={() => {
+          // Ensure gtag exists after script loads
+          window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+        }}
       />
+
       <CookieConsent
         location="bottom"
         buttonText="Accept"
         declineButtonText="Decline"
         cookieName="cookieConsent"
-        onAccept={() => setConsentGiven(true)}
-        enableDeclineButton
         expires={365}
-        // Add style props as needed
+        enableDeclineButton
+        onAccept={() => {
+          window.gtag("consent", "update", {
+            analytics_storage: "granted",
+            ad_storage: "granted"
+          });
+          // Manually send first page_view
+          window.gtag("event", "page_view", {
+            page_title: document.title,
+            page_location: window.location.href
+          });
+        }}
+        onDecline={() => {
+          window.gtag("consent", "update", {
+            analytics_storage: "denied"
+          });
+        }}
       >
         This website uses cookies to enhance the user experience.
       </CookieConsent>
