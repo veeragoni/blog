@@ -6,9 +6,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { SiteFooter } from "@/components/site-footer";
 import { siteConfig } from "@/config/site";
 import CookieConsentComponent from '@/components/cookie-conset'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
-const GA_MEASUREMENT_ID = 'G-9YHS24HY6J';
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -64,6 +64,7 @@ export default function RootLayout({
           </div>
           <Toaster />
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-9YHS24HY6J" />
       </body>
     </html>
   );
