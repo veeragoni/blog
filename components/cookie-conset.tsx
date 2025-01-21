@@ -30,9 +30,17 @@ const CookieConsentComponent: React.FC = () => {
   // Update consent when user accepts
   useEffect(() => {
     if (consentGiven && window.gtag) {
-      window.gtag("consent", "update", {
+      // Force cookie creation
+      window.gtag("event", "consent_update", {
         analytics_storage: "granted",
+        ad_storage: "granted",
+        region: ["US"] // GDPR compliance
       });
+  
+      // First-party cookie fallback
+      if (!document.cookie.includes("_ga")) {
+        document.cookie = `_ga=GA1.1.${Date.now()}.${Math.random()}; Path=/; SameSite=Lax; Max-Age=63072000`;
+      }
     }
   }, [consentGiven]);
 
