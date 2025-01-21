@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { SiteFooter } from "@/components/site-footer";
 import { siteConfig } from "@/config/site";
+import { GoogleAnalytics } from '@next/third-parties/google'
+import CookieConsentBanner from '@/components/cookie-conset'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,6 +59,8 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="relative min-h-screen flex flex-col">
             {children}
+            <CookieConsentBanner />
+            <GoogleAnalytics gaId="G-9YHS24HY6J" />
             <SiteFooter />
           </div>
           <Toaster />
