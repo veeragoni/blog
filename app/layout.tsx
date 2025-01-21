@@ -1,3 +1,4 @@
+// app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -5,8 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { SiteFooter } from "@/components/site-footer";
 import { siteConfig } from "@/config/site";
-import CookieConsentComponent from '@/components/cookie-conset'
-import { GoogleAnalytics } from '@next/third-parties/google'
+import CookieConsentComponent from "@/components/cookie-conset";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -64,7 +64,6 @@ export default function RootLayout({
           </div>
           <Toaster />
         </ThemeProvider>
-        <GoogleAnalytics gaId="G-9YHS24HY6J" />
       </body>
     </html>
   );
