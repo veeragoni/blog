@@ -11,7 +11,7 @@ export function SiteHeader() {
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <BookOpen className="h-6 w-6" />
-            <span className="font-bold">Blog</span>
+            <span className="font-bold">TL;DR Version</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <Link href="/posts" className="hover:text-foreground">Posts</Link>
