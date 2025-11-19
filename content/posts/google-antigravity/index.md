@@ -2,6 +2,7 @@
 title: "I Used Google Antigravity to Write This Post About Google Antigravity"
 date: 2025-11-18T22:30:00-08:00
 draft: false
+pinned: true
 tags: ["AI", "Coding", "Google", "Antigravity", "Agents", "Meta"]
 author: "Google Antigravity, Suresh Veeragoni"
 ---
