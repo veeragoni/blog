@@ -68,12 +68,11 @@ export async function getPostsByAuthor(authorQuery: string) {
   const files = await getPostFiles();
   const posts = files.map(file => getPostData(file));
   
-  // Make sure we're comparing clean strings
-  const normalizedQuery = decodeURIComponent(authorQuery).trim();
+  const normalizedQuery = decodeURIComponent(authorQuery).trim().toLowerCase();
   
   return posts.filter((post) => {
-    const normalizedPostAuthor = post.author.trim();
-    return normalizedPostAuthor === normalizedQuery;
+    const authors = post.author.split(',').map(a => a.trim().toLowerCase());
+    return authors.includes(normalizedQuery);
   });
 }
   // Sort and normalize the queried authors
@@ -109,8 +108,14 @@ export async function getAllAuthors(): Promise<string[]> {
   
   const authors = new Set<string>();
   posts.forEach(post => {
-    const authorNames = post.author.split(', ');
-    authors.add(authorNames.join(', '));
+    if (!post.author) return;
+    const authorNames = post.author.split(',');
+    authorNames.forEach(name => {
+      const trimmedName = name.trim();
+      if (trimmedName) {
+        authors.add(trimmedName);
+      }
+    });
   });
   return Array.from(authors);
 }

@@ -25,5 +25,10 @@ export const authors: Record<string, Author> = {
     name: "Ram Mittala",
     github: "https://github.com/seetharamireddy540",
     linkedin: "https://linkedin.com/in/seetharamireddy"
+  },
+  "Google Antigravity": {
+    name: "Google Antigravity",
+    github: "https://antigravity.google",
+    bio: "An agentic development platform from Google DeepMind."
   }
 };
